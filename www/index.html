@@ -25,18 +25,27 @@
         <link rel="stylesheet" type="text/css" href="static/styles/index.css" />
         <link rel="stylesheet" type="text/css" href="lib/jqm/jquery.mobile-1.3.2.min.css">
         <link rel="stylesheet" type="text/css" href="lib/jqm/jquery.mobile.structure-1.3.2.min.css">
+<!--        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="static/styles/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="static/styles/global.css">
         <title>DNN Times</title>
     </head>
     <body>
         <script type="text/javascript" src="lib/jquery/jquery.js"></script>
         <script type="text/javascript" src="lib/jqm/jquery.mobile-1.3.2.js"></script>
-        <div class="app">
-            <h1>DNN Times</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <script type="text/javascript" src="static/scripts/config.js"></script>
+        
+        <div data-role="page" id="main-page">
+            <div data-role="header" data-position="fixed">
+                <a href="#menu" data-position="left"><i class="icon-reorder"></i></a>
+                <h1 class="title" >DNN Times</h1>
+            </div>
+            
+            <div data-role="panel" data-display="push" data-position="left" id="menu">
+                
             </div>
         </div>
+        
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
         <script type="text/javascript" src="static/scripts/index.js"></script>

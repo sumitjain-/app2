@@ -1,0 +1,5 @@
+@font-face{font-family: heading;src: url('bauhaus-93.ttf');} 
+
+.title {
+    font-family:heading ;
+}
