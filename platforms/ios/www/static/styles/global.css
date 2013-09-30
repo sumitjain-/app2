@@ -4,7 +4,7 @@
     font-family:heading ;
 }
 
-#notif_display li a {
+.inside-li {
     width:80% ;
 }
 
