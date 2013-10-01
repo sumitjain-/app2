@@ -4,19 +4,20 @@
     font-family:heading ;
 }
 
-.inside-li {
-    width:80% ;
-}
-
 #notif_display li img {
     border:solid #ddd 1px ;
     margin:0 1% ;
     border-radius: 5px ;
 }
 
+.notif_headline {
+    font-weight:500 ;
+}
+
 .post_headline {
     font-family:georgia ;
     font-size: 200% ;
+    padding: 10px 5% ;
 }
 
 .post_image {
@@ -30,8 +31,11 @@
 .post_date {
     color:#999 ;
     font-size: 90% ;
+    padding: 0 5% ;
 }
 
 .post_content {
     font-family:georgia ;
+    text-align:justify ;
+    padding: 10px 5% ;
 }

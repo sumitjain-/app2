@@ -38,49 +38,16 @@
         
         <div data-role="page" id="main-page">
             <div data-role="header" data-position="fixed">
-                <a href="#menu" data-position="left"><i class="icon-reorder"></i></a>
+                <a href="#menu" data-position="left"><i class="icon-th-list"></i></a>
                 <h1 class="title" >DNN Times</h1>
             </div>
             <ul data-role="listview" data-icon="false" id="notif_display">
-                <li>
-                    <a href="#post">
-                        <div class="inside-li">
-                            <h2>The post goes here</h2>
-                            <p>The date</p>
-                        </div>
-                        <img src="static/images/logo.png" width="100%">
-                    </a>
-                </li>
-                <li>
-                    <a href="#post">
-                        <div>
-                            <h2>The post goes here</h2>
-                            <p>The date</p>
-                        </div>
-                        <img src="static/images/logo.png" width="100%">
-                    </a>
-                </li>
-                <li>
-                    <a href="#post" data-transition="flip">
-                        <div>
-                            <h2>The post goes here</h2>
-                            <p>The date</p>
-                        </div>
-                        <img src="static/images/logo.png" width="100%">
-                    </a>
-                </li>
-                <li>
-                    <a href="#post" data-transition="flip">
-                        <div>
-                            <h2>The post goes here</h2>
-                            <p>The date</p>
-                        </div>
-                        <img src="static/images/logo.png" width="100%">
-                    </a>
-                </li>
-            </ul>
-            <div data-role="panel" data-display="push" data-position="left" id="menu">
                 
+            </ul>
+            <div data-role="panel" data-display="overlay" data-position="left" id="menu">
+                <a data-rel="back">
+                    <i class="icon-angle-right"></i>
+                </a>
             </div>
         </div>
         
@@ -91,19 +58,16 @@
                 </a>
                 <h1 class="title" >DNN Times</h1>
             </div>
-            <div data-role="content">
-                <h1 class="post_headline">The headline</h1>
-                <img class="post_image" src="static/images/logo.png">
-                <p class="post_date">DNN Times | The date here</p>
-                <p class="post_content">The content goes here</p>
-            </div>
+            <div class="post_page"></div>
         </div>
         
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
+        <script type="text/javascript" src="static/scripts/get.js"></script>
         <script type="text/javascript" src="static/scripts/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            
         </script>
     </body>
 </html>
