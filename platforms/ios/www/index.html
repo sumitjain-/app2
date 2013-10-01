@@ -40,14 +40,30 @@
             <div data-role="header" data-position="fixed">
                 <a href="#menu" data-position="left"><i class="icon-th-list"></i></a>
                 <h1 class="title" >DNN Times</h1>
+                <a href="#" data-position="right" onclick="feed_refresh()"><i class="icon-refresh"></i></a>
             </div>
             <ul data-role="listview" data-icon="false" id="notif_display">
                 
             </ul>
             <div data-role="panel" data-display="overlay" data-position="left" id="menu">
-                <a data-rel="back">
-                    <i class="icon-angle-right"></i>
-                </a>
+                <ul data-role="listview">
+                    
+                <li>
+                    <a href="#register_device">
+                        Register
+                    </a>
+                </li>
+                <li>
+                    <a href="#terms">
+                        Terms of use
+                    </a>
+                </li>
+                <li>
+                    <a href="#feedback">
+                        Send feedback
+                    </a>
+                </li>
+                </ul>
             </div>
         </div>
         
@@ -61,8 +77,33 @@
             <div class="post_page"></div>
         </div>
         
+        <div id="register_device" data-role="page" data-add-back-btn="true" >
+            <div class="header" data-role="header" data-position="fixed">
+                <h1 id="header_text">DNN Times</h1>
+            </div>
+            <div data-role="content">
+                <h3 class="reg_headline">Register your device</h3>
+                <hr>
+                <br>
+                <form action="http://dnn-times.com/public_lib/register_user" id="register_new" method="post" onsubmit="return register_device()">
+                    <input type="text" name="register_name" id="register_name" placeholder="Name"  />
+                    <br><p id="name_error"></p>
+                    <input type="text" name="register_email" id="register_email" placeholder="E-mail ID"  />
+                    <br><p id="email_error"></p>
+                    <input type="number" name="register_mobnum" id="register_mobnum" placeholder="Mobile number"  />
+                    <br><p id="mobnum_error"></p>
+                    <input type="hidden" name="reg_key" id="reg_key" />
+                    <input type="hidden" name="reg_platform" id="reg_platform" />
+                    <input type="submit" value="Send" data-theme="b" />
+                </form>
+                <h5 id="register_response"></h5>
+            </div>
+        </div>
+
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
+        <script type="text/javascript" src="lib/moment/moment.min.js"></script>
+        <script type="text/javascript" src="static/scripts/reg.js"></script>
         <script type="text/javascript" src="static/scripts/get.js"></script>
         <script type="text/javascript" src="static/scripts/index.js"></script>
         <script type="text/javascript">

@@ -1,6 +1,6 @@
 @font-face{font-family: heading;src: url('bauhaus-93.ttf');} 
 
-.title {
+.title, #header_text {
     font-family:heading ;
 }
 
@@ -16,7 +16,7 @@
 
 .post_headline {
     font-family:georgia ;
-    font-size: 200% ;
+    font-size: 170% ;
     padding: 10px 5% ;
 }
 
